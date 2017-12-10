@@ -8,7 +8,7 @@ class Kernel(object):
         return lambda x, y: np.inner(x, y)
 
     @staticmethod
-    def gaussian(sigma=1):
+    def gaussian(sigma=5):
         return lambda x, y: np.exp(-(np.linalg.norm(x - y))**2 / (2 * sigma**2))
     
     @staticmethod
